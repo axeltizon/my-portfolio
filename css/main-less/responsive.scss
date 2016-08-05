@@ -1,0 +1,338 @@
+
+
+@media (max-width: 480px){
+	#services{
+		h2{
+			font-size: 120%;
+		}
+	}
+
+}
+@media (min-width: 480px){
+	#home,
+	#portfolio,
+	#services,
+	#contact{
+		padding-top: 50px;
+	    h2{
+		    text-align: center;
+	        margin-bottom: 40px;
+	        color: $white;
+		}
+	}
+	header{
+		.nav-wraper.desktop{
+			display: block;
+		}
+		.mobile-view{
+			display: none;
+		}
+		nav.desktop-view{
+		    padding: 24px 0;
+			ul{
+				li{
+		           	padding: 0 3%;
+				    a{
+				    	margin: 0;
+				    }
+				}
+			}
+		}
+	}
+	#home{
+		height: 400px;
+		.img-circle{
+		    width: 30%;
+    		height: 30%;
+		}
+		.content{
+			padding: 1%;
+		    width: 60%;
+		    h1{
+		    	margin: 10px 0;
+	    	    font-size: 30px;
+    	        text-align: left;
+		    }
+		    p{
+    	        text-align: left;
+		    }
+		}
+	}
+	#portfolio{
+	    height: 1000px;
+		h2{
+		    margin-bottom: 10px;
+		}
+	    padding-top: 100px;			
+		.project-item{
+	        width: 40%;
+		    min-width: 40%;
+	        min-height: 260px;
+    		max-height: 260px;
+    		figcaption{
+			    padding: 0.5em;
+    		}
+		}
+	}
+	#services{
+       height: 750px;
+		h2{
+			margin-bottom: 10px;
+		}
+    	.service-content{
+    	    width: 90%;
+    	}
+	}
+	#contact{
+	    height: 800px;
+		.contact-form,
+		.contact-details{
+			text-align: center;
+			.contact-info{
+				ul{
+					li{
+						a,
+						p{
+						    text-align: center;
+    						display: block;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media (min-width: 768px){
+	header{
+		nav.desktop-view{
+		    padding: 24px;
+			ul{
+				li{
+			        padding: 0 25px;
+				    a{
+			    	    margin: 0 20px;
+				    }
+				}
+			}
+		}
+	}
+	#home{
+		height: 500px;
+		.img-circle{
+			width: 200px;
+    		height: 300px;
+		}
+		.content{
+		    width: 500px;
+		    h1{
+		    	margin: 10px 0;
+		    }
+		    p{
+	    	    font-size: 20px;
+		    }
+		}
+	}
+	#portfolio{
+	    padding-top: 100px;			
+		.project-item{
+	    	min-width: 280px;
+			max-height: 280px;
+			figcaption{
+			    padding: 2em;
+    		}
+		}
+	}
+	#services{
+	    height: 600px;
+	    h2{
+		    margin-bottom: 50px;
+		}
+	    .service-menu-container{
+		    margin: 20px auto;
+		    width: 200px;
+			height: 60px;
+			display: inline-block;
+			vertical-align: middle;
+		    margin: 30px;
+		   	&.active{
+		    	width: 200px;
+	    		height: 200px;
+    		 	margin: 30px;
+	    	}
+	    }
+    	.service-content{
+        	width: 500px;
+    	}
+	}
+	#contact{
+	    height: 600px;
+		.contact-form,
+		.contact-details{
+			width: 48%;
+			.contact-info{
+				ul{
+					li{
+						a,
+						p{
+						    text-align: left;
+    						display: block;
+						}
+					}
+				}
+			}
+		}
+	}
+    .jast-container{
+		width: 750px;
+	}
+}
+@media (min-width: 992px){
+
+	#home,
+	#portfolio,
+	#services,
+	#contact{
+		height: 600px;
+		padding-top: 10%;
+	    position: relative;
+	    h2{
+		    text-align: center;
+	        margin-bottom: 40px;
+	        color: $white;
+		}
+	}
+
+	#home{
+		height: 500px;
+		.img-circle{
+			width: 250px;
+    		height: 250px;
+		}
+		.content{
+		    width: 500px;
+		    h1{
+		    	margin: 10px 0;
+	    	    font-size: 40px;
+		    }
+		    p{
+    	        font-size: 25px;
+		    }
+		}
+	}
+	#portfolio{
+		height: 800px;
+		h2{
+	        margin-bottom: 10px;
+		}
+		.project-item{
+		    margin: 20px 10px;
+        	max-width: 300px;
+    		max-height: 320px;
+    		height: 380px;
+		}
+	}
+	#services{
+    	.icon-btn{
+		    width: 250px;
+    		height: 250px;
+    		ul{
+    			li{
+				    height: 80px;
+    				width: 80px;
+    			}
+    		}
+    	}
+    	.service-menu-container{
+		    margin: 20px auto;
+		    width: 250px;
+			height: 60px;
+			display: inline-block;
+			vertical-align: middle;
+		    margin: 30px;
+		   	&.active{
+		    	width: 250px;
+	    		height: 250px;
+    		 	margin: 30px;
+    		 	.service-menu{
+		    		button{
+						&.btn{
+					        &[data-value="mobile"]{
+				        	    top: -125px;
+					        }
+					        &[data-value="code"]{
+							    left: -125px;
+					        }
+				         	&[data-value="desktop"]{
+							    bottom: -125px;
+					        }
+					        &[data-value="cart"]{
+					        	right: -125px;
+					        }
+						}
+					}
+		    	}
+	    	}
+	    }
+    	.service-content{
+		    width: 600px;
+    	}
+	}
+	#contact{
+		text-align: center;
+		.contact-details{
+			text-align: left;
+		    max-width: 300px;
+		}
+	}
+    .jast-container{
+		width: 970px;
+	}
+}
+@media (min-width: 1200px){
+	#home,
+	#portfolio,
+	#services,
+	#contact{
+		height: 600px;
+		padding-top: 100px;
+	    position: relative;
+	    h2{
+		    text-align: center;
+	        margin-bottom: 40px;
+	        color: $white;
+		}
+	}
+	#home{
+		height: 500px;
+		.img-circle{
+			width: 300px;
+			height: 300px;
+		}
+		.content{
+		    width: 700px;
+	     	h1{
+	    	 	margin: 25px 0;
+		    }
+		    p{
+	    	    font-size: 30px;
+		    }
+		}
+	}
+	#portfolio{
+	    height: 1000px;
+		.project-item{
+		    min-width: 320px;
+			max-height: 360px;
+			width: 30%;
+	    }
+	}
+	#services{
+    	padding-top: 5%;
+    	.service-content{
+		    width: 800px;
+    	}
+	}
+	.jast-container{
+		width: 1170px;
+	}
+}
